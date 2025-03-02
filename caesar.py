@@ -11,7 +11,7 @@ USAGE = f"{PROG} [OPTION]... [FILE or TEXT]..."
 EPILOG = """
 Example of usage:
     python caesar.py --key KEY <file>
-    python caesar.py --key KEY "cipher text"
+    python caesar.py --key KEY "cipher or plaintext"
     python caesar.py --bruteforce <file>
     python caesar.py --bruteforce "cipher text"
     
