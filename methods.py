@@ -35,9 +35,11 @@ def caesar_bruteforce(ciphertext):
                 continue
 
             if char.islower():
-                decrypted.append(string.ascii_lowercase[(string.ascii_lowercase.index(char) + shift) % 26])
+                lower_char_index = string.ascii_lowercase.index(char)
+                decrypted.append(string.ascii_lowercase[(lower_char_index + shift) % 26])
             elif char.isupper():
-                decrypted.append(string.ascii_uppercase[(string.ascii_uppercase.index(char) + shift) % 26])
+                upper_char_index = string.ascii_uppercase.index(char)
+                decrypted.append(string.ascii_uppercase[(upper_char_index + shift) % 26])
             else:
                 decrypted.append(char)
 
